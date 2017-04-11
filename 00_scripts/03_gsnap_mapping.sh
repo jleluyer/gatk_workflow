@@ -47,7 +47,7 @@ base=__BASE__
         "$DATAOUTPUT"/"$base".sam >$DATAOUTPUT/"$base".bam
 	
      echo "Creating sorted bam for $base"
-	samtools sort -n "$DATAOUTPUT"/"$base".bam -o "$DATAOUTPUT"/"$base".sorted
+	samtools sort "$DATAOUTPUT"/"$base".bam -o "$DATAOUTPUT"/"$base".sorted
     
     # Clean up
     echo "Removing "$DATAOUTPUT"/"$base".sam"
