@@ -25,3 +25,4 @@ output="/home1/datawork/jleluyer/00_ressources/transcriptomes/Symbiodinium_sp/cl
 java -jar $DICT_JAR REFERENCE=$reference_fa OUTPUT=$output 2>"$LOG_FOLDER"/log.index."$TIMESTAMP"
 
 
+samtools faidx $reference_fa
