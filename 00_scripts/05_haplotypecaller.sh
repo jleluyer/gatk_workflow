@@ -24,7 +24,7 @@ output_snp="05_results/raw_snps.vcf"
 GATK_JAR="/datawork/fsi1/bioinfo/home12-copycaparmor/softs/sources/GATK/GenomeAnalysisTK.jar"
 tmp="/home1/scratch/jleluyer/"
 
-java -jar -Djava.io.tmpdir=$tmp $GATK_JAR \
+java -jar -Xmx55G -Djava.io.tmpdir=$tmp $GATK_JAR \
 	-T HaplotypeCaller \
 	-R $reference_fa \
 	-I 04_mapped/pooled.sort.bam \
