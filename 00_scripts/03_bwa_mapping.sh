@@ -55,4 +55,4 @@ base=__BASE__
     echo "Removing "$DATAOUTPUT"/"$base".bam"
 
    	rm "$DATAOUTPUT"/"$base".sam
-   # 	rm "$DATAOUTPUT"/"$base".bam
+   	rm "$DATAOUTPUT"/"$base".bam
