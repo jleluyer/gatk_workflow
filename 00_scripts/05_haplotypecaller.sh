@@ -18,11 +18,11 @@ cp $SCRIPT $LOG_FOLDER/"$TIMESTAMP"_"$NAME"
 
 
 # Global variables
-reference_fa="/home1/datawork/jleluyer/00_ressources/transcriptomes/Symbiodinium_sp/clade_C1/Symbiodinium-sp-C1.nt.fa"
+reference_fa="Symbiodinium-sp-C1.nt.fa"
 output_variants="05_results/raw_variants.vcf"
 output_snp="05_results/raw_snps.vcf"
-GATK_JAR="/datawork/fsi1/bioinfo/home12-copycaparmor/softs/sources/GATK/GenomeAnalysisTK.jar"
-tmp="/home1/scratch/jleluyer/"
+GATK_JAR="GenomeAnalysisTK.jar"
+tmp="scratch/"
 
 
 # Create list bam input files
