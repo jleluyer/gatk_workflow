@@ -18,9 +18,9 @@ cp $SCRIPT $LOG_FOLDER/"$TIMESTAMP"_"$NAME"
 cd $PBS_O_WORKDIR
 
 # Global variables
-reference_fa="/home1/datawork/jleluyer/00_ressources/transcriptomes/Symbiodinium_sp/clade_C1/Symbiodinium-sp-C1.nt.fa"
-DICT_JAR="/datawork/fsi1/bioinfo/home12-copycaparmor/softs/sources/picard/picard-tools-1.88/picard-tools-1.88/CreateSequenceDictionary.jar"
-output="/home1/datawork/jleluyer/00_ressources/transcriptomes/Symbiodinium_sp/clade_C1/Symbiodinium-sp-C1.nt.dict"
+reference_fa="Symbiodinium-sp-C1.nt.fa"
+DICT_JAR="CreateSequenceDictionary.jar"
+output=""
 
 java -jar $DICT_JAR REFERENCE=$reference_fa OUTPUT=$output 2>"$LOG_FOLDER"/log.index."$TIMESTAMP"
 
